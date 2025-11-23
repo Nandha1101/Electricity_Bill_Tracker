@@ -1,0 +1,47 @@
+===== Daily Usage and Bill =====
+Day,Units,Bill
+1,23,Rs115
+2,26,Rs130
+3,24,Rs120
+4,19,Rs95
+5,29,Rs145
+6,22,Rs110
+7,29,Rs145
+8,28,Rs140
+9,11,Rs55
+10,18,Rs90
+11,21,Rs105
+12,26,Rs130
+13,21,Rs105
+14,13,Rs65
+15,18,Rs90
+16,13,Rs65
+17,24,Rs120
+18,19,Rs95
+19,22,Rs110
+20,18,Rs90
+21,19,Rs95
+22,28,Rs140
+23,18,Rs90
+24,29,Rs145
+25,15,Rs75
+26,28,Rs140
+27,17,Rs85
+28,27,Rs135
+29,18,Rs90
+30,12,Rs60
+
+Total Units: 635
+Total Bill: Rs3175
+Max 7-day Usage: 177 units
+
+===== Appliance-wise Usage =====
+Appliance,Units/Day,Cost/Day
+Fan,0.4,Rs2
+Light,0.06,Rs0.3
+Refrigerator,3.6,Rs36
+TV,0.4,Rs2
+AC,7.5,Rs75
+Washing Machine,0.5,Rs2.5
+Iron,0.5,Rs2.5
+Total Estimated Appliance Usage/Day: 12.96 units

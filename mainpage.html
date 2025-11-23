@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electricity Bill Tracker</title>
+</head>
+<body>
+  <h2>🔌 Dynamic Electricity Bill Tracker</h2>
+
+  <button onclick="fetchUsage()">1️⃣ Fetch Usage from API</button>
+  <button onclick="runTracker()">2️⃣ Run C++ Bill Tracker</button>
+  
+
+
+  <pre id="output">Waiting for data...</pre>
+
+  <script>
+    function fetchUsage() {
+      fetch("http://localhost:5000/get-usage")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("output").innerText = " Usage: " + data.data.join(", ");
+        })
+        .catch(err => {
+          document.getElementById("output").innerText = " Failed to fetch usage.";
+          console.error("Fetch usage error:", err);
+        });
+    }
+
+    function runTracker() {
+      fetch("http://localhost:5000/run-tracker")
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById("output").innerText += "\n\n Bill Output:\n" + data.csv;
+        })
+        .catch(err => {
+          document.getElementById("output").innerText += "\n Failed to run tracker.";
+          console.error("Run tracker error:", err);
+        });
+
+    }
+
+    
+
+
+  </script>
+</body>
+</html>
+
+
